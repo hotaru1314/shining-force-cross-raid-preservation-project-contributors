@@ -1,0 +1,38 @@
+# 文档许可 / Documentation License
+
+本仓库中的**文档**（`spec.md`、各 `README.md`、以及其它 `.md` 文件）
+采用 **Creative Commons Attribution 4.0 International (CC BY 4.0)**。
+
+The documentation in this repository (`spec.md`, all `README.md` files and other
+`.md` files) is licensed under the **Creative Commons Attribution 4.0
+International License (CC BY 4.0)**.
+
+- 许可证全文 / Full text: https://creativecommons.org/licenses/by/4.0/legalcode
+- 人类可读摘要 / Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+
+## 署名要求 / Attribution
+
+转载、翻译、引用或基于本文档再创作时，请注明来源：
+
+> 来源：Shining Force Cross Raid 保存研究项目（ESCTP 协议逆向与假服务端）
+> https://github.com/hotaru1314/shining-force-cross-raid-preservation-project-contributors
+
+When you repost, translate, quote, or build upon this documentation, please
+credit the source:
+
+> Source: Shining Force Cross Raid preservation project — ESCTP protocol
+> reverse engineering and fake server
+> https://github.com/hotaru1314/shining-force-cross-raid-preservation-project-contributors
+
+## 例外：抓包数据 / Exception: captured data
+
+`server2.0/world_templates.py`、`server2.0/world_templates_joiner.py`、
+`server2.0/real_frames.py` 中的字节序列是**从真机抓取的链路数据**，
+不属于本项目版权，**不在上述任何许可范围内**。它们仅为互操作研究
+（让已停运的机台能够重新联机）而随仓库分发。
+
+The byte sequences in `server2.0/world_templates.py`,
+`server2.0/world_templates_joiner.py` and `server2.0/real_frames.py` are
+**captured from real arcade hardware**. They are not the copyright of this
+project and are **not covered by any license above**. They are distributed
+with this repository solely for interoperability research.

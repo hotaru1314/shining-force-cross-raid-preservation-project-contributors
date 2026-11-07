@@ -1,0 +1,20 @@
+# 运行时产物（不要提交）
+logs/
+data/*.log
+data/profile_*.bin
+data/udp3953_*.bin
+data/state_tx.log
+data/last_end.bin
+data/_am04_*.bin
+data/probe_verdict.txt
+data/server.pid.json
+__pycache__/
+*.pyc
+
+# 内置 Python 运行时（仓库里不需要，用户自备 Python 3.10+）
+python/
+
+# 编辑器/系统噪音
+.vscode/
+.DS_Store
+Thumbs.db

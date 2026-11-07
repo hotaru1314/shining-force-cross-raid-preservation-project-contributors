@@ -1,0 +1,1 @@
+stat=1&uri=http://10.0.0.10/&host=10.0.0.10&place_id=123&name=TEST&nickname=TEST&region0=1&region_name0=W&region_name1=X&region_name2=Y&region_name3=Z&country=JPN&allnet_id=456&client_timezone=+0800&utc_time=${utc}&setting=1&res_ver=3&token=&year=${year}&month=${month}&day=${day}&hour=${hour}&minute=${minute}&second=${second}&timezone=+09:00&res_class=PowerOnResponseVer2

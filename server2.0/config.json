@@ -1,0 +1,90 @@
+{
+  "_comment": "Single source of truth. Edit this file, not data/*.on and not the IP inside allnet_resp.txt.",
+  "_probe": "ping the cabinet with: python run_server.py --status",
+  "server_ip": "10.0.0.10",
+  "bind": "0.0.0.0",
+  "data_dir": "data",
+  "log_dir": "logs",
+  "poweron": {
+    "setting": "1",
+    "timezone": "+09:00",
+    "res_class": "PowerOnResponseVer2"
+  },
+  "services": {
+    "allnet": {
+      "enabled": true,
+      "script": "allnet_server.py",
+      "port": 80,
+      "args": []
+    },
+    "sif": {
+      "enabled": true,
+      "script": "match_server.py",
+      "port": 52000,
+      "args": [
+        "--bind",
+        "0.0.0.0",
+        "--port",
+        "52000",
+        "--hold",
+        "40",
+        "--coop-fake"
+      ]
+    },
+    "pcp": {
+      "enabled": true,
+      "script": "pcp_server.py",
+      "ports": [
+        40100,
+        40102,
+        40104,
+        40106,
+        40110,
+        40113,
+        40114
+      ],
+      "args": [
+        "--ports",
+        "40100,40102,40104,40106,40110,40113,40114",
+        "--networkaddr",
+        "10.0.0.10",
+        "--keyid",
+        "AALG-00000000101"
+      ]
+    },
+    "udp": {
+      "enabled": true,
+      "script": "udp_echo.py",
+      "port": 52002,
+      "args": [
+        "--pong"
+      ]
+    },
+    "udp3953": {
+      "enabled": true,
+      "script": "udp3953.py",
+      "port": 3953,
+      "args": [
+        "--port",
+        "3953",
+        "--serve"
+      ]
+    }
+  },
+  "flags": {
+    "echo_start_fixed": true,
+    "fill_start_u32": true,
+    "fill_userinfo": false,
+    "rd2_plain": false,
+    "rd2_manual": false,
+    "echo_save": false,
+    "end_status1": false,
+    "echo_oldbug": false,
+    "start_status": 0
+  },
+  "sif": {
+    "s1_mode": "empty",
+    "probe_mode": false
+  },
+  "fake_time": "10:00:00"
+}

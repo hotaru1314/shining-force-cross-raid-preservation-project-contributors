@@ -1,0 +1,5 @@
+naominet.jp=10.0.0.10
+ib.naominet.jp=10.0.0.10
+bbrouter.loc=10.0.0.10
+tenporouter.loc=10.0.0.10
+aime.naominet.jp=10.0.0.10
